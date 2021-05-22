@@ -1,9 +1,16 @@
 import os
 import discord
 from discord.ext import commands
+from dotenv.main import load_dotenv
 from utils import GameGrid
-from Main import imgur_client
+from imgurpython import ImgurClient
 
+load_dotenv()
+
+imgur_client_id = os.getenv('IMGUR_CLIENT_ID')
+imgur_client_secret = os.getenv('IMGUR_CLIENT_SECRET')
+
+imgur_client = ImgurClient(imgur_client_id, imgur_client_secret)
 
 class Events:
 

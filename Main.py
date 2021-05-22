@@ -3,17 +3,11 @@ import discord
 from dotenv import load_dotenv
 from Events import Events
 from discord.ext import commands
-from imgurpython import ImgurClient
 
 load_dotenv()
 
 bot = commands.Bot(command_prefix=">", description="2048 Bot", intent=discord.Intents().all())
 TOKEN = os.getenv('TOKEN')
-
-imgur_client_id = os.getenv('IMGUR_CLIENT_ID')
-imgur_client_secret = os.getenv('IMGUR_CLIENT_SECRET')
-
-imgur_client = ImgurClient(imgur_client_id, imgur_client_secret)
 
 
 @bot.event

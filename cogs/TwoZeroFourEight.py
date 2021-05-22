@@ -2,7 +2,7 @@ import os
 import discord
 from utils import GameGrid
 from discord.ext import commands
-from Main import imgur_client
+from Events import imgur_client
 
 
 class TwoZeroFourEight(commands.Cog):
