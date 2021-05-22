@@ -2,6 +2,7 @@ import os
 import discord
 from discord.ext import commands
 from utils import GameGrid
+from Main import imgur_client
 
 
 class Events:
